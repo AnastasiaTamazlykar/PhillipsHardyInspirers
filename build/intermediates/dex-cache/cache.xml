@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\pre-dexed\debug\classes-67d6050dd0d93b33e8fcc82316a96090d3e9323c.jar" />
+    </item>
+    <item
+        jar="D:\Android\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="D:\Android\CriminalIntent\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-fc12d848ccdbb46fc8d40584fe8f40a6a9eeabfb.jar" />
+    </item>
+    <item
+        jar="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-c319ddc56356913330f793cf71efc7a510096521.jar" />
+    </item>
+    <item
+        jar="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="D:\Android\GitHub\PhillipsHardyInspirers\app\build\intermediates\pre-dexed\debug\classes-be82cc202b4bcea9cfef05a7760bc38ef161668f.jar" />
+    </item>
+    <item
+        jar="D:\Android\CriminalIntent\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="D:\Android\CriminalIntent\app\build\intermediates\pre-dexed\debug\classes-4bf96d2b80c96246c761166b7986b5ae2a0d4132.jar" />
+    </item>
+    <item
+        jar="D:\Android\CriminalIntent\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="D:\Android\CriminalIntent\app\build\intermediates\pre-dexed\debug\classes-a1aac6d67f7548951b65b0518ded242cd60456e9.jar" />
+    </item>
+    <item
+        jar="D:\Android\CriminalIntent\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="D:\Android\CriminalIntent\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-8f2177e71b3439a01a4197fbbeefccfd427a779c.jar" />
+    </item>
+
+</items>
