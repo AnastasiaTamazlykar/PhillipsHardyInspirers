@@ -14,11 +14,13 @@ import android.widget.EditText;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 /**
  * Created by Настасья on 31.12.2014.
  */
 public class CrimeFragment extends Fragment {
+	public static final String EXTRA_CRIME_ID="com/example/criminalintent/CrimeFragment/crime_id";
 	private Crime mCrime;
 	private EditText mTitleField;
 	private Button mDateButton;
@@ -27,7 +29,8 @@ public class CrimeFragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mCrime = new Crime();
+		UUID crimeId = (UUID) getActivity().getIntent().getSerializableExtra(EXTRA_CRIME_ID);
+		mCrime = CrimeLab.get(getActivity()).get(crimeId);
 		mCrime.setDate(new Date());
 	}
 
