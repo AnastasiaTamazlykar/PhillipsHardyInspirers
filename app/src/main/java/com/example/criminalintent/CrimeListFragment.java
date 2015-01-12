@@ -23,6 +23,12 @@ public class CrimeListFragment extends ListFragment {
 	private ArrayList<Crime> mCrimes;
 
 	@Override
+	public void onResume(){
+		super.onResume();
+		((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
+	}
+
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		getActivity().setTitle(R.string.crimes_title);
@@ -35,7 +41,7 @@ public class CrimeListFragment extends ListFragment {
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
-		Intent intent = new Intent(getActivity(),CrimeActivity.class);
+		Intent intent = new Intent(getActivity(),CrimePagerActivity.class);
 		intent.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getId());
 		startActivity(intent);
 

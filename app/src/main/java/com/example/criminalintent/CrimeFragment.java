@@ -26,10 +26,11 @@ public class CrimeFragment extends Fragment {
 	private Button mDateButton;
 	private CheckBox mSolved;
 
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		UUID crimeId = (UUID) getActivity().getIntent().getSerializableExtra(EXTRA_CRIME_ID);
+		UUID crimeId = (UUID)getArguments().getSerializable(EXTRA_CRIME_ID);
 		mCrime = CrimeLab.get(getActivity()).get(crimeId);
 		mCrime.setDate(new Date());
 	}
@@ -39,8 +40,10 @@ public class CrimeFragment extends Fragment {
 		View v = inflater.inflate(R.layout.crime_fragment, parent, false);
 		mTitleField = (EditText) v.findViewById(R.id.crime_title);
 		mDateButton = (Button) v.findViewById(R.id.button_date);
-		mDateButton.setText(new SimpleDateFormat("EEEE, MMM d, y").format(mCrime.getDate()));
 		mSolved = (CheckBox) v.findViewById(R.id.checkBox_solved);
+		mTitleField.setText(mCrime.getTitle());
+		mDateButton.setText(new SimpleDateFormat("EEEE, MMM d, y").format(mCrime.getDate()));
+		mSolved.setChecked(mCrime.isSolved());
 		mSolved.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -66,5 +69,12 @@ public class CrimeFragment extends Fragment {
 		return v;
 	}
 
+	public static CrimeFragment newInstance(UUID uuid){
+		Bundle args= new Bundle();
+		args.putSerializable(EXTRA_CRIME_ID,uuid);
+		CrimeFragment fragment= new CrimeFragment();
+		fragment.setArguments(args);
+		return fragment;
+	}
 
 }
